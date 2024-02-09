@@ -7,7 +7,7 @@ import { Apiresponse } from '../../../mapping/response/Apiresponse';
   providedIn: 'root'
 })
 export class ModelService {
-  private url : string = "http://localhost:8080/model";
+  private url : string = "https://car-selling-ws-prod-production-1011.up.railway.app/model";
   constructor(private http : HttpClient) { }
   findAll(token: string): Observable<Apiresponse>{
     const headers = new HttpHeaders({
