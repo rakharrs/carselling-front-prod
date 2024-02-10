@@ -7,7 +7,7 @@ import { Apiresponse } from '../../../mapping/response/Apiresponse';
   providedIn: 'root'
 })
 export class AnnouncementService {
-  private url : string = "http://localhost:8080/announcement";
+  private url : string = "https://car-selling-ws-prod-production-1011.up.railway.app/announcement";
   constructor(private http : HttpClient) { }
 
   public findAll():Observable<Apiresponse>{
